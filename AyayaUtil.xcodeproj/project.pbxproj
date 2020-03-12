@@ -10,6 +10,7 @@
 		0FF0217C2419DD12002A6799 /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
 		0FF021812419DD12002A6799 /* AyayaUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021802419DD12002A6799 /* AyayaUtilTests.swift */; };
 		0FF021832419DD12002A6799 /* AyayaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF021752419DD11002A6799 /* AyayaUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021962419E84B002A6799 /* SlideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0FF0217B2419DD12002A6799 /* AyayaUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyayaUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF021802419DD12002A6799 /* AyayaUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTests.swift; sourceTree = "<group>"; };
 		0FF021822419DD12002A6799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF021962419E84B002A6799 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		0FF021742419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXGroup;
 			children = (
+				0FF021952419E83B002A6799 /* 测滑 */,
 				0FF021752419DD11002A6799 /* AyayaUtil.h */,
 				0FF021762419DD11002A6799 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				0FF021822419DD12002A6799 /* Info.plist */,
 			);
 			path = AyayaUtilTests;
+			sourceTree = "<group>";
+		};
+		0FF021952419E83B002A6799 /* 测滑 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021962419E84B002A6799 /* SlideViewController.swift */,
+			);
+			path = "测滑";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +406,7 @@
 		0FF0218A2419DD12002A6799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
 				INFOPLIST_FILE = AyayaUtilTests/Info.plist;
@@ -412,6 +425,7 @@
 		0FF0218B2419DD12002A6799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
 				INFOPLIST_FILE = AyayaUtilTests/Info.plist;

@@ -10,6 +10,9 @@
 		0FF0217C2419DD12002A6799 /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
 		0FF021812419DD12002A6799 /* AyayaUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021802419DD12002A6799 /* AyayaUtilTests.swift */; };
 		0FF021832419DD12002A6799 /* AyayaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF021752419DD11002A6799 /* AyayaUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF0218E2419DDBE002A6799 /* AppleSigIn+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0218D2419DDBE002A6799 /* AppleSigIn+Extension.swift */; };
+		0FF021912419DDE6002A6799 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021902419DDE6002A6799 /* SlideViewController.swift */; };
+		0FF021942419DE1E002A6799 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021932419DE1E002A6799 /* AlertUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		0FF0217B2419DD12002A6799 /* AyayaUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyayaUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF021802419DD12002A6799 /* AyayaUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTests.swift; sourceTree = "<group>"; };
 		0FF021822419DD12002A6799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF0218D2419DDBE002A6799 /* AppleSigIn+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppleSigIn+Extension.swift"; sourceTree = "<group>"; };
+		0FF021902419DDE6002A6799 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		0FF021932419DE1E002A6799 /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		0FF021742419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXGroup;
 			children = (
+				0FF021922419DE16002A6799 /* 弹窗 */,
+				0FF0218F2419DDCF002A6799 /* 侧滑 */,
+				0FF0218C2419DDAD002A6799 /* 苹果登陆 */,
 				0FF021752419DD11002A6799 /* AyayaUtil.h */,
 				0FF021762419DD11002A6799 /* Info.plist */,
 			);
@@ -84,6 +93,30 @@
 				0FF021822419DD12002A6799 /* Info.plist */,
 			);
 			path = AyayaUtilTests;
+			sourceTree = "<group>";
+		};
+		0FF0218C2419DDAD002A6799 /* 苹果登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF0218D2419DDBE002A6799 /* AppleSigIn+Extension.swift */,
+			);
+			path = "苹果登陆";
+			sourceTree = "<group>";
+		};
+		0FF0218F2419DDCF002A6799 /* 侧滑 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021902419DDE6002A6799 /* SlideViewController.swift */,
+			);
+			path = "侧滑";
+			sourceTree = "<group>";
+		};
+		0FF021922419DE16002A6799 /* 弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021932419DE1E002A6799 /* AlertUtil.swift */,
+			);
+			path = "弹窗";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +181,7 @@
 				TargetAttributes = {
 					0FF021712419DD11002A6799 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					0FF0217A2419DD12002A6799 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF021912419DDE6002A6799 /* SlideViewController.swift in Sources */,
+				0FF021942419DE1E002A6799 /* AlertUtil.swift in Sources */,
+				0FF0218E2419DDBE002A6799 /* AppleSigIn+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +377,7 @@
 		0FF021872419DD12002A6799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
@@ -356,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = starryMedia.AyayaUtil;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +403,7 @@
 		0FF021882419DD12002A6799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
@@ -388,6 +428,7 @@
 		0FF0218A2419DD12002A6799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
 				INFOPLIST_FILE = AyayaUtilTests/Info.plist;
@@ -406,6 +447,7 @@
 		0FF0218B2419DD12002A6799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75EYP2YGJW;
 				INFOPLIST_FILE = AyayaUtilTests/Info.plist;

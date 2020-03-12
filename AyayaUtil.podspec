@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
 
   s.ios.framework  = 'UIKit'
   s.ios.framework  = 'Foundation'
-  s.ios.framework  = 'AuthenticationServices'
+  s.ios.framework  = 'CommonCrypto'
+  s.ios.framework  = 'CoreGraphics'
 end 

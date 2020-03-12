@@ -13,6 +13,8 @@
 		0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021962419E84B002A6799 /* SlideViewController.swift */; };
 		0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021992419E8ED002A6799 /* AlertUtil.swift */; };
 		0FF021A02419EA09002A6799 /* LAPolicyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0219F2419EA09002A6799 /* LAPolicyUtil.swift */; };
+		0FF021A32419EAE2002A6799 /* MyTextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021A22419EAE2002A6799 /* MyTextFile.swift */; };
+		0FF021A62419EB2E002A6799 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021A52419EB2E002A6799 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		0FF021962419E84B002A6799 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		0FF021992419E8ED002A6799 /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 		0FF0219F2419EA09002A6799 /* LAPolicyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAPolicyUtil.swift; sourceTree = "<group>"; };
+		0FF021A22419EAE2002A6799 /* MyTextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextFile.swift; sourceTree = "<group>"; };
+		0FF021A52419EB2E002A6799 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		0FF021742419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXGroup;
 			children = (
+				0FF021A42419EB22002A6799 /* 字符串扩展 */,
+				0FF021A12419EAD6002A6799 /* 自定义输入框 */,
 				0FF0219E2419E9F7002A6799 /* 指纹面部识别 */,
 				0FF021982419E8E2002A6799 /* 弹窗 */,
 				0FF021952419E83B002A6799 /* 测滑 */,
@@ -117,6 +123,22 @@
 				0FF0219F2419EA09002A6799 /* LAPolicyUtil.swift */,
 			);
 			path = "指纹面部识别";
+			sourceTree = "<group>";
+		};
+		0FF021A12419EAD6002A6799 /* 自定义输入框 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021A22419EAE2002A6799 /* MyTextFile.swift */,
+			);
+			path = "自定义输入框";
+			sourceTree = "<group>";
+		};
+		0FF021A42419EB22002A6799 /* 字符串扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021A52419EB2E002A6799 /* String+Extension.swift */,
+			);
+			path = "字符串扩展";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,8 @@
 			files = (
 				0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */,
 				0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */,
+				0FF021A32419EAE2002A6799 /* MyTextFile.swift in Sources */,
+				0FF021A62419EB2E002A6799 /* String+Extension.swift in Sources */,
 				0FF021A02419EA09002A6799 /* LAPolicyUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

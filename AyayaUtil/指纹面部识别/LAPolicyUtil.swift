@@ -44,7 +44,7 @@ class LAPolicyUtil: NSObject {
                     }
                     touchID(true)
                 }else{
-                    print(error?.localizedDescription)
+                    print(error?.localizedDescription as Any)
                     touchID(false)
                 }
             }

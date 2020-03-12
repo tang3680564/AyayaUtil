@@ -53,7 +53,7 @@ public class SlideViewController: UIViewController {
         let tap = UITapGestureRecognizer()
         tap.numberOfTapsRequired = 1
         weak var wSelf = self
-        tap.addTarget(wSelf, action: #selector(hinde))
+        tap.addTarget(wSelf as Any, action: #selector(hinde))
         self.backGourdView?.isUserInteractionEnabled = true
         self.backGourdView?.addGestureRecognizer(tap)
     

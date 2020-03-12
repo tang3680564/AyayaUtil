@@ -11,6 +11,7 @@
 		0FF021812419DD12002A6799 /* AyayaUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021802419DD12002A6799 /* AyayaUtilTests.swift */; };
 		0FF021832419DD12002A6799 /* AyayaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF021752419DD11002A6799 /* AyayaUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021962419E84B002A6799 /* SlideViewController.swift */; };
+		0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021992419E8ED002A6799 /* AlertUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		0FF021802419DD12002A6799 /* AyayaUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTests.swift; sourceTree = "<group>"; };
 		0FF021822419DD12002A6799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF021962419E84B002A6799 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		0FF021992419E8ED002A6799 /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		0FF021742419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXGroup;
 			children = (
+				0FF021982419E8E2002A6799 /* 弹窗 */,
 				0FF021952419E83B002A6799 /* 测滑 */,
 				0FF021752419DD11002A6799 /* AyayaUtil.h */,
 				0FF021762419DD11002A6799 /* Info.plist */,
@@ -95,6 +98,14 @@
 				0FF021962419E84B002A6799 /* SlideViewController.swift */,
 			);
 			path = "测滑";
+			sourceTree = "<group>";
+		};
+		0FF021982419E8E2002A6799 /* 弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021992419E8ED002A6799 /* AlertUtil.swift */,
+			);
+			path = "弹窗";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */,
 				0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

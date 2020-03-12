@@ -9,7 +9,7 @@
 import Foundation
 import LocalAuthentication
 ///指纹识别,脸部识别
-class LAPolicyUtil: NSObject {
+public class LAPolicyUtil: NSObject {
     var context : LAContext!
     var canTouchID : Bool = false
     required override init() {
@@ -34,7 +34,7 @@ class LAPolicyUtil: NSObject {
     /// 开始识别
     ///
     /// - Parameter touchID:识别回调
-    func beginTouchId(touchID : @escaping ((Bool) -> Void),localizedReason : String = "验证身份"){
+    public func beginTouchId(touchID : @escaping ((Bool) -> Void),localizedReason : String = "验证身份"){
         DispatchQueue.main.async {
             self.context.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: localizedReason) { (success, error) in
                 ///验证成功

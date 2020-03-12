@@ -13,7 +13,7 @@ import UIKit
 
 extension String{
     
-    func getLabel() -> String {
+    public func getLabel() -> String {
         if NSLocalizedString(self, comment: "") == self{
             let paths = Bundle.main.path(forResource: "en", ofType: "lproj")
             let strs =  NSLocalizedString(self, tableName: nil, bundle: Bundle.init(path: paths!)!, value: "", comment: "")
@@ -22,7 +22,7 @@ extension String{
         return NSLocalizedString(self, comment: "");
     }
     
-    static func cheackStringIsNoBlank(str : String?) -> Bool{
+    public static func cheackStringIsNoBlank(str : String?) -> Bool{
         if(str == nil || str == ""){
             return false
         }
@@ -32,57 +32,57 @@ extension String{
         return true
     }
     
-    func cheackIsNumber() -> Bool{
+    public func cheackIsNumber() -> Bool{
         let pattern = "^[0-9]+$"
         return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
     }
     
-    func cheackIsMobPhone() -> Bool{
+    public func cheackIsMobPhone() -> Bool{
         let pattern = "((^(13|14|15|16|17|18|19)[0-9]{9}$)|(^0[1,2]{1}\\d{1}-?\\d{8}$)|(^0[3-9] {1}\\d{2}-?\\d{7,8}$)|(^0[1,2]{1}\\d{1}-?\\d{8}-(\\d{1,4})$)|(^0[3-9]{1}\\d{2}-? \\d{7,8}-(\\d{1,4})$))"
         return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
     }
     
-    func cheackEmail() -> Bool{
+    public func cheackEmail() -> Bool{
         let pattern = "^[A-Za-z\\d]+([-_.][A-Za-z\\d]+)*@([A-Za-z\\d]+[-.])+[A-Za-z\\d]{2,4}$"
         return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
     }
     
-    func cheackIsPrice() -> Bool{
+    public func cheackIsPrice() -> Bool{
         let patterns = "^[0-9]+$"
         let pattern = "^\\d+(\\.\\d{0,20})?$"
         let result = NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self) || NSPredicate(format: "SELF MATCHES %@", patterns).evaluate(with: self)
         return result
     }
     
-    func cheackIsDMAReSell() -> Bool{
+    public func cheackIsDMAReSell() -> Bool{
         let patterns = "^[0-9]+$"
         let pattern = "^\\d+(\\.\\d{0,2})?$"
         let result = NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self) || NSPredicate(format: "SELF MATCHES %@", patterns).evaluate(with: self)
         return result
     }
     
-    func cheackIsDmaAddress() -> Bool{
+    public func cheackIsDmaAddress() -> Bool{
         let pattern = "^0x.+"
         return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
     }
     
-    func cheackIsElaAddress() -> Bool{
+    public func cheackIsElaAddress() -> Bool{
         let pattern = "^E.+|^e.+"
         return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
     }
     
     ///获取字符串高度H
-    func getNormalStrH(str: String, strFont: CGFloat, w: CGFloat) -> CGFloat {
+    public func getNormalStrH(str: String, strFont: CGFloat, w: CGFloat) -> CGFloat {
         return getNormalStrSize(str: str, font: strFont, w: w, h: CGFloat.greatestFiniteMagnitude).height
     }
     
     ///获取字符串高度H
-    func getNormalStrH(strFont: CGFloat, w: CGFloat) -> CGFloat {
+    public func getNormalStrH(strFont: CGFloat, w: CGFloat) -> CGFloat {
         return getNormalStrSize(str: self, font: strFont, w: w, h: CGFloat.greatestFiniteMagnitude).height
     }
     
     ///获取字符串宽度
-    func getNormalStrW(strFont: CGFloat, h: CGFloat) -> CGFloat {
+    public func getNormalStrW(strFont: CGFloat, h: CGFloat) -> CGFloat {
         return getNormalStrSize(str: self, font: strFont, w: CGFloat.greatestFiniteMagnitude, h: h).width
     }
     
@@ -102,7 +102,7 @@ extension String{
         
     }
     
-    func setPriceDecimal(dicimal : Int) -> String{
+    public func setPriceDecimal(dicimal : Int) -> String{
         var priceStr = ""
         let oldStr = String(self)
         let numberFormatter = NumberFormatter()
@@ -129,7 +129,7 @@ extension String{
         return priceStr
     }
     
-    func md5() -> String {
+    public func md5() -> String {
         let str = self.cString(using: String.Encoding.utf8)
         let strLen = CUnsignedInt(self.lengthOfBytes(using: String.Encoding.utf8))
         let digestLen = Int(CC_MD5_DIGEST_LENGTH)

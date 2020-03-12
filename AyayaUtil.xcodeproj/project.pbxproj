@@ -15,6 +15,18 @@
 		0FF021A02419EA09002A6799 /* LAPolicyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0219F2419EA09002A6799 /* LAPolicyUtil.swift */; };
 		0FF021A32419EAE2002A6799 /* MyTextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021A22419EAE2002A6799 /* MyTextFile.swift */; };
 		0FF021A62419EB2E002A6799 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021A52419EB2E002A6799 /* String+Extension.swift */; };
+		0FF021A9241A0765002A6799 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021A8241A0765002A6799 /* UIView+Extension.swift */; };
+		0FF021AC241A0857002A6799 /* NSObject+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021AB241A0857002A6799 /* NSObject+Extesion.swift */; };
+		0FF021AF241A096A002A6799 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021AE241A096A002A6799 /* NSDate+Extension.swift */; };
+		0FF021B4241A09A2002A6799 /* ZHFCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021B1241A09A2002A6799 /* ZHFCalendarView.swift */; };
+		0FF021B5241A09A2002A6799 /* UpDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021B2241A09A2002A6799 /* UpDownView.swift */; };
+		0FF021B6241A09A2002A6799 /* ZHFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021B3241A09A2002A6799 /* ZHFColor.swift */; };
+		0FF021B9241A0C54002A6799 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021B8241A0C54002A6799 /* FileUtil.swift */; };
+		0FF021BC241A1597002A6799 /* NSMutableDictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021BB241A1597002A6799 /* NSMutableDictionary+Extension.swift */; };
+		0FF021BE241A15BD002A6799 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021BD241A15BD002A6799 /* MyLabel.swift */; };
+		0FF021C1241A1732002A6799 /* UIButton+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021C0241A1732002A6799 /* UIButton+Extesion.swift */; };
+		0FF021C4241A17E8002A6799 /* SwizzedProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021C3241A17E8002A6799 /* SwizzedProto.swift */; };
+		0FF021C7241A187C002A6799 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021C6241A187C002A6799 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +51,18 @@
 		0FF0219F2419EA09002A6799 /* LAPolicyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAPolicyUtil.swift; sourceTree = "<group>"; };
 		0FF021A22419EAE2002A6799 /* MyTextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextFile.swift; sourceTree = "<group>"; };
 		0FF021A52419EB2E002A6799 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0FF021A8241A0765002A6799 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0FF021AB241A0857002A6799 /* NSObject+Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extesion.swift"; sourceTree = "<group>"; };
+		0FF021AE241A096A002A6799 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		0FF021B1241A09A2002A6799 /* ZHFCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHFCalendarView.swift; sourceTree = "<group>"; };
+		0FF021B2241A09A2002A6799 /* UpDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpDownView.swift; sourceTree = "<group>"; };
+		0FF021B3241A09A2002A6799 /* ZHFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHFColor.swift; sourceTree = "<group>"; };
+		0FF021B8241A0C54002A6799 /* FileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		0FF021BB241A1597002A6799 /* NSMutableDictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableDictionary+Extension.swift"; sourceTree = "<group>"; };
+		0FF021BD241A15BD002A6799 /* MyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
+		0FF021C0241A1732002A6799 /* UIButton+Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extesion.swift"; sourceTree = "<group>"; };
+		0FF021C3241A17E8002A6799 /* SwizzedProto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizzedProto.swift; sourceTree = "<group>"; };
+		0FF021C6241A187C002A6799 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +105,16 @@
 		0FF021742419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXGroup;
 			children = (
+				0FF021C5241A186C002A6799 /* 钥匙串 */,
+				0FF021C2241A17DB002A6799 /* runtime方法交换 */,
+				0FF021BF241A1728002A6799 /* 按钮扩展 */,
+				0FF021BA241A158E002A6799 /* 其他 */,
+				0FF021B7241A0C47002A6799 /* 文件相关 */,
+				0FF021AD241A0960002A6799 /* 日期扩展 */,
+				0FF021AA241A0842002A6799 /* NSObject扩展 */,
+				0FF021A7241A0752002A6799 /* View扩展 */,
 				0FF021A42419EB22002A6799 /* 字符串扩展 */,
-				0FF021A12419EAD6002A6799 /* 自定义输入框 */,
+				0FF021A12419EAD6002A6799 /* 输入框 */,
 				0FF0219E2419E9F7002A6799 /* 指纹面部识别 */,
 				0FF021982419E8E2002A6799 /* 弹窗 */,
 				0FF021952419E83B002A6799 /* 测滑 */,
@@ -125,12 +157,12 @@
 			path = "指纹面部识别";
 			sourceTree = "<group>";
 		};
-		0FF021A12419EAD6002A6799 /* 自定义输入框 */ = {
+		0FF021A12419EAD6002A6799 /* 输入框 */ = {
 			isa = PBXGroup;
 			children = (
 				0FF021A22419EAE2002A6799 /* MyTextFile.swift */,
 			);
-			path = "自定义输入框";
+			path = "输入框";
 			sourceTree = "<group>";
 		};
 		0FF021A42419EB22002A6799 /* 字符串扩展 */ = {
@@ -139,6 +171,83 @@
 				0FF021A52419EB2E002A6799 /* String+Extension.swift */,
 			);
 			path = "字符串扩展";
+			sourceTree = "<group>";
+		};
+		0FF021A7241A0752002A6799 /* View扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021A8241A0765002A6799 /* UIView+Extension.swift */,
+			);
+			path = "View扩展";
+			sourceTree = "<group>";
+		};
+		0FF021AA241A0842002A6799 /* NSObject扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021AB241A0857002A6799 /* NSObject+Extesion.swift */,
+			);
+			path = "NSObject扩展";
+			sourceTree = "<group>";
+		};
+		0FF021AD241A0960002A6799 /* 日期扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021B0241A09A2002A6799 /* Calendar */,
+				0FF021AE241A096A002A6799 /* NSDate+Extension.swift */,
+			);
+			path = "日期扩展";
+			sourceTree = "<group>";
+		};
+		0FF021B0241A09A2002A6799 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021B1241A09A2002A6799 /* ZHFCalendarView.swift */,
+				0FF021B2241A09A2002A6799 /* UpDownView.swift */,
+				0FF021B3241A09A2002A6799 /* ZHFColor.swift */,
+			);
+			name = Calendar;
+			path = ../../../Uptick_IOS/Uptick/Calendar;
+			sourceTree = "<group>";
+		};
+		0FF021B7241A0C47002A6799 /* 文件相关 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021B8241A0C54002A6799 /* FileUtil.swift */,
+			);
+			path = "文件相关";
+			sourceTree = "<group>";
+		};
+		0FF021BA241A158E002A6799 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021BB241A1597002A6799 /* NSMutableDictionary+Extension.swift */,
+				0FF021BD241A15BD002A6799 /* MyLabel.swift */,
+			);
+			path = "其他";
+			sourceTree = "<group>";
+		};
+		0FF021BF241A1728002A6799 /* 按钮扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021C0241A1732002A6799 /* UIButton+Extesion.swift */,
+			);
+			path = "按钮扩展";
+			sourceTree = "<group>";
+		};
+		0FF021C2241A17DB002A6799 /* runtime方法交换 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021C3241A17E8002A6799 /* SwizzedProto.swift */,
+			);
+			path = "runtime方法交换";
+			sourceTree = "<group>";
+		};
+		0FF021C5241A186C002A6799 /* 钥匙串 */ = {
+			isa = PBXGroup;
+			children = (
+				0FF021C6241A187C002A6799 /* KeychainManager.swift */,
+			);
+			path = "钥匙串";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,10 +360,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF021AF241A096A002A6799 /* NSDate+Extension.swift in Sources */,
+				0FF021C4241A17E8002A6799 /* SwizzedProto.swift in Sources */,
+				0FF021B5241A09A2002A6799 /* UpDownView.swift in Sources */,
+				0FF021A9241A0765002A6799 /* UIView+Extension.swift in Sources */,
+				0FF021B9241A0C54002A6799 /* FileUtil.swift in Sources */,
+				0FF021BE241A15BD002A6799 /* MyLabel.swift in Sources */,
+				0FF021C7241A187C002A6799 /* KeychainManager.swift in Sources */,
 				0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */,
 				0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */,
+				0FF021AC241A0857002A6799 /* NSObject+Extesion.swift in Sources */,
+				0FF021BC241A1597002A6799 /* NSMutableDictionary+Extension.swift in Sources */,
+				0FF021C1241A1732002A6799 /* UIButton+Extesion.swift in Sources */,
+				0FF021B4241A09A2002A6799 /* ZHFCalendarView.swift in Sources */,
 				0FF021A32419EAE2002A6799 /* MyTextFile.swift in Sources */,
 				0FF021A62419EB2E002A6799 /* String+Extension.swift in Sources */,
+				0FF021B6241A09A2002A6799 /* ZHFColor.swift in Sources */,
 				0FF021A02419EA09002A6799 /* LAPolicyUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

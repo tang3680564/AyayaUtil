@@ -15,7 +15,7 @@ public enum SlideDirection {
     case SlideRight;
 }
 
-
+///测滑，继承这个viewControl
 public class SlideViewController: UIViewController {
     
     let kScreenWidth = UIScreen.main.bounds.size.width

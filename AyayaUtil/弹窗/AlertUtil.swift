@@ -6,7 +6,7 @@
 //  Copyright © 2019 starrymedia. All rights reserved.
 //
 import UIKit
-
+///弹窗
 public class AlertUtil{
     
     public static func alertMessage(message : String,comfirMessage : String = "确定"){

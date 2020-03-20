@@ -11,16 +11,19 @@ import UIKit
 
 extension NSObject{
     
-    func getCurrentNavgationViewControl() -> UINavigationController?{
+    public func getCurrentNavgationViewControl() -> UINavigationController?{
         if let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController{
             let selectIndex = tabBar.selectedIndex
             let viewControls = tabBar.viewControllers?[selectIndex] as? UINavigationController
             return viewControls
         }
+        else if let viewControls = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController{
+            return viewControls
+        }
         return nil
     }
     
-    func getCurrentViewControl() -> UIViewController?{
+    public func getCurrentViewControl() -> UIViewController?{
         if let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController{
             let selectIndex = tabBar.selectedIndex
             let viewControls = tabBar.viewControllers?[selectIndex] as? UINavigationController
@@ -28,11 +31,14 @@ extension NSObject{
                 return vcArr[vcArr.count - 1]
             }
             return nil
+        }else if let viewControls = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController{
+            let vcArr = viewControls.viewControllers
+            return vcArr[vcArr.count - 1]
         }
         return nil
     }
     
-    func getNibHeight(name : String) -> CGFloat{
+    public func getNibHeight(name : String) -> CGFloat{
         if let views = Bundle.main.loadNibNamed(name, owner: nil, options: nil){
             if views.count > 0 {
                 if let view = views[0] as? UIView{

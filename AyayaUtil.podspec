@@ -11,8 +11,5 @@ Pod::Spec.new do |s|
   s.swift_version             = '5.0'
   s.source_files = 'AyayaUtil/**/*.swift'
 
-  s.ios.framework  = 'UIKit'
-  s.ios.framework  = 'Foundation'
-  s.ios.framework  = 'CommonCrypto'
-  s.ios.framework  = 'CoreGraphics'
+  
 end 

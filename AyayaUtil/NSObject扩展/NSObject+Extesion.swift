@@ -12,9 +12,6 @@ import UIKit
 extension NSObject{
     
     public func getCurrentNavgationViewControl() -> UINavigationController?{
-        print(UIApplication.shared)
-        print(UIApplication.shared.keyWindow)
-        print(UIApplication.shared.keyWindow?.rootViewController)
         if let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController{
             let selectIndex = tabBar.selectedIndex
             let viewControls = tabBar.viewControllers?[selectIndex] as? UINavigationController

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F027C9E24B56C4B0041A30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027C9D24B56C4B0041A30B /* AppDelegate.swift */; };
+		0F027CA224B56C4B0041A30B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027CA124B56C4B0041A30B /* ViewController.swift */; };
+		0F027CA524B56C4B0041A30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F027CA324B56C4B0041A30B /* Main.storyboard */; };
+		0F027CA724B56C500041A30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F027CA624B56C500041A30B /* Assets.xcassets */; };
+		0F027CAA24B56C500041A30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F027CA824B56C500041A30B /* LaunchScreen.storyboard */; };
+		0F027CB524B56C500041A30B /* AyayaUtilTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027CB424B56C500041A30B /* AyayaUtilTestTests.swift */; };
+		0F027CC024B56C510041A30B /* AyayaUtilTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027CBF24B56C510041A30B /* AyayaUtilTestUITests.swift */; };
+		0F027CCC24B56CC40041A30B /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
+		0F027CCD24B56CC40041A30B /* AyayaUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FF0217C2419DD12002A6799 /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
 		0FF021812419DD12002A6799 /* AyayaUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021802419DD12002A6799 /* AyayaUtilTests.swift */; };
 		0FF021832419DD12002A6799 /* AyayaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF021752419DD11002A6799 /* AyayaUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +39,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0F027CB124B56C500041A30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF021692419DD11002A6799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F027C9A24B56C4B0041A30B;
+			remoteInfo = AyayaUtilTest;
+		};
+		0F027CBC24B56C500041A30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF021692419DD11002A6799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F027C9A24B56C4B0041A30B;
+			remoteInfo = AyayaUtilTest;
+		};
+		0F027CCE24B56CC40041A30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF021692419DD11002A6799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF021712419DD11002A6799;
+			remoteInfo = AyayaUtil;
+		};
 		0FF0217D2419DD12002A6799 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FF021692419DD11002A6799 /* Project object */;
@@ -39,7 +69,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0F027CD024B56CC40041A30B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F027CCD24B56CC40041A30B /* AyayaUtil.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0F027C9B24B56C4B0041A30B /* AyayaUtilTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyayaUtilTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F027C9D24B56C4B0041A30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F027CA124B56C4B0041A30B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F027CA424B56C4B0041A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F027CA624B56C500041A30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F027CA924B56C500041A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F027CAB24B56C500041A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F027CB024B56C500041A30B /* AyayaUtilTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyayaUtilTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F027CB424B56C500041A30B /* AyayaUtilTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTestTests.swift; sourceTree = "<group>"; };
+		0F027CB624B56C500041A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F027CBB24B56C500041A30B /* AyayaUtilTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyayaUtilTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F027CBF24B56C510041A30B /* AyayaUtilTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTestUITests.swift; sourceTree = "<group>"; };
+		0F027CC124B56C510041A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF021722419DD11002A6799 /* AyayaUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AyayaUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF021752419DD11002A6799 /* AyayaUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AyayaUtil.h; sourceTree = "<group>"; };
 		0FF021762419DD11002A6799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +123,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0F027C9824B56C4B0041A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F027CCC24B56CC40041A30B /* AyayaUtil.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CAD24B56C500041A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CB824B56C500041A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FF0216F2419DD11002A6799 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,12 +163,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F027C9C24B56C4B0041A30B /* AyayaUtilTest */ = {
+			isa = PBXGroup;
+			children = (
+				0F027C9D24B56C4B0041A30B /* AppDelegate.swift */,
+				0F027CA124B56C4B0041A30B /* ViewController.swift */,
+				0F027CA324B56C4B0041A30B /* Main.storyboard */,
+				0F027CA624B56C500041A30B /* Assets.xcassets */,
+				0F027CA824B56C500041A30B /* LaunchScreen.storyboard */,
+				0F027CAB24B56C500041A30B /* Info.plist */,
+			);
+			path = AyayaUtilTest;
+			sourceTree = "<group>";
+		};
+		0F027CB324B56C500041A30B /* AyayaUtilTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F027CB424B56C500041A30B /* AyayaUtilTestTests.swift */,
+				0F027CB624B56C500041A30B /* Info.plist */,
+			);
+			path = AyayaUtilTestTests;
+			sourceTree = "<group>";
+		};
+		0F027CBE24B56C510041A30B /* AyayaUtilTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F027CBF24B56C510041A30B /* AyayaUtilTestUITests.swift */,
+				0F027CC124B56C510041A30B /* Info.plist */,
+			);
+			path = AyayaUtilTestUITests;
+			sourceTree = "<group>";
+		};
+		0F027CCB24B56CC40041A30B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0FF021682419DD11002A6799 = {
 			isa = PBXGroup;
 			children = (
 				0FF021742419DD11002A6799 /* AyayaUtil */,
 				0FF0217F2419DD12002A6799 /* AyayaUtilTests */,
+				0F027C9C24B56C4B0041A30B /* AyayaUtilTest */,
+				0F027CB324B56C500041A30B /* AyayaUtilTestTests */,
+				0F027CBE24B56C510041A30B /* AyayaUtilTestUITests */,
 				0FF021732419DD11002A6799 /* Products */,
+				0F027CCB24B56CC40041A30B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +219,9 @@
 			children = (
 				0FF021722419DD11002A6799 /* AyayaUtil.framework */,
 				0FF0217B2419DD12002A6799 /* AyayaUtilTests.xctest */,
+				0F027C9B24B56C4B0041A30B /* AyayaUtilTest.app */,
+				0F027CB024B56C500041A30B /* AyayaUtilTestTests.xctest */,
+				0F027CBB24B56C500041A30B /* AyayaUtilTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +379,61 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0F027C9A24B56C4B0041A30B /* AyayaUtilTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F027CC824B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTest" */;
+			buildPhases = (
+				0F027C9724B56C4B0041A30B /* Sources */,
+				0F027C9824B56C4B0041A30B /* Frameworks */,
+				0F027C9924B56C4B0041A30B /* Resources */,
+				0F027CD024B56CC40041A30B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F027CCF24B56CC40041A30B /* PBXTargetDependency */,
+			);
+			name = AyayaUtilTest;
+			productName = AyayaUtilTest;
+			productReference = 0F027C9B24B56C4B0041A30B /* AyayaUtilTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F027CAF24B56C500041A30B /* AyayaUtilTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F027CC924B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTestTests" */;
+			buildPhases = (
+				0F027CAC24B56C500041A30B /* Sources */,
+				0F027CAD24B56C500041A30B /* Frameworks */,
+				0F027CAE24B56C500041A30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F027CB224B56C500041A30B /* PBXTargetDependency */,
+			);
+			name = AyayaUtilTestTests;
+			productName = AyayaUtilTestTests;
+			productReference = 0F027CB024B56C500041A30B /* AyayaUtilTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0F027CBA24B56C500041A30B /* AyayaUtilTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F027CCA24B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTestUITests" */;
+			buildPhases = (
+				0F027CB724B56C500041A30B /* Sources */,
+				0F027CB824B56C500041A30B /* Frameworks */,
+				0F027CB924B56C500041A30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F027CBD24B56C500041A30B /* PBXTargetDependency */,
+			);
+			name = AyayaUtilTestUITests;
+			productName = AyayaUtilTestUITests;
+			productReference = 0F027CBB24B56C500041A30B /* AyayaUtilTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0FF021712419DD11002A6799 /* AyayaUtil */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FF021862419DD12002A6799 /* Build configuration list for PBXNativeTarget "AyayaUtil" */;
@@ -297,10 +476,21 @@
 		0FF021692419DD11002A6799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Ayaya;
 				TargetAttributes = {
+					0F027C9A24B56C4B0041A30B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					0F027CAF24B56C500041A30B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 0F027C9A24B56C4B0041A30B;
+					};
+					0F027CBA24B56C500041A30B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 0F027C9A24B56C4B0041A30B;
+					};
 					0FF021712419DD11002A6799 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
@@ -325,11 +515,38 @@
 			targets = (
 				0FF021712419DD11002A6799 /* AyayaUtil */,
 				0FF0217A2419DD12002A6799 /* AyayaUtilTests */,
+				0F027C9A24B56C4B0041A30B /* AyayaUtilTest */,
+				0F027CAF24B56C500041A30B /* AyayaUtilTestTests */,
+				0F027CBA24B56C500041A30B /* AyayaUtilTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F027C9924B56C4B0041A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F027CAA24B56C500041A30B /* LaunchScreen.storyboard in Resources */,
+				0F027CA724B56C500041A30B /* Assets.xcassets in Resources */,
+				0F027CA524B56C4B0041A30B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CAE24B56C500041A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CB924B56C500041A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FF021702419DD11002A6799 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +564,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F027C9724B56C4B0041A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F027CA224B56C4B0041A30B /* ViewController.swift in Sources */,
+				0F027C9E24B56C4B0041A30B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CAC24B56C500041A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F027CB524B56C500041A30B /* AyayaUtilTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F027CB724B56C500041A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F027CC024B56C510041A30B /* AyayaUtilTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FF0216E2419DD11002A6799 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +624,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0F027CB224B56C500041A30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F027C9A24B56C4B0041A30B /* AyayaUtilTest */;
+			targetProxy = 0F027CB124B56C500041A30B /* PBXContainerItemProxy */;
+		};
+		0F027CBD24B56C500041A30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F027C9A24B56C4B0041A30B /* AyayaUtilTest */;
+			targetProxy = 0F027CBC24B56C500041A30B /* PBXContainerItemProxy */;
+		};
+		0F027CCF24B56CC40041A30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF021712419DD11002A6799 /* AyayaUtil */;
+			targetProxy = 0F027CCE24B56CC40041A30B /* PBXContainerItemProxy */;
+		};
 		0FF0217E2419DD12002A6799 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0FF021712419DD11002A6799 /* AyayaUtil */;
@@ -389,7 +646,150 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0F027CA324B56C4B0041A30B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F027CA424B56C4B0041A30B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F027CA824B56C500041A30B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F027CA924B56C500041A30B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0F027CC224B56C510041A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F027CC324B56C510041A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0F027CC424B56C510041A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AyayaUtilTest.app/AyayaUtilTest";
+			};
+			name = Debug;
+		};
+		0F027CC524B56C510041A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AyayaUtilTest.app/AyayaUtilTest";
+			};
+			name = Release;
+		};
+		0F027CC624B56C510041A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AyayaUtilTest;
+			};
+			name = Debug;
+		};
+		0F027CC724B56C510041A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EYP2YGJW;
+				INFOPLIST_FILE = AyayaUtilTestUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjq.AyayaUtilTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AyayaUtilTest;
+			};
+			name = Release;
+		};
 		0FF021842419DD12002A6799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,6 +1004,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F027CC824B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F027CC224B56C510041A30B /* Debug */,
+				0F027CC324B56C510041A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F027CC924B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F027CC424B56C510041A30B /* Debug */,
+				0F027CC524B56C510041A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F027CCA24B56C510041A30B /* Build configuration list for PBXNativeTarget "AyayaUtilTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F027CC624B56C510041A30B /* Debug */,
+				0F027CC724B56C510041A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0FF0216C2419DD11002A6799 /* Build configuration list for PBXProject "AyayaUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

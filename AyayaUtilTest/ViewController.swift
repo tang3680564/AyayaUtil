@@ -9,25 +9,39 @@
 import UIKit
 import AyayaUtil
 class ViewController: UIViewController {
-
-    @IBOutlet weak var testView: UIView!
     
-    var observation: NSKeyValueObservation?
+    @IBOutlet weak var testTableView: UITableView!
+    
+    let identfit = "TestTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(testView.frame)
-        observation = testView.observe(\UIView.bounds, options: .new) { (view, change) in
-            print("111")
-            
-        }
+        testTableView.register(UINib(nibName: identfit, bundle: nil), forCellReuseIdentifier: identfit)
+        testTableView.delegate = self
+        testTableView.dataSource = self
     
         // Do any additional setup after loading the view.
     }
-    
-    override func viewDidLayoutSubviews() {
-        print(testView.frame)
-    }
 
+}
+
+extension ViewController: UITableViewDelegate,UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return getNibHeight(name: identfit)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: identfit, for: indexPath) as? TestTableViewCell
+        return cell ?? UITableViewCell()
+    }
 }
 

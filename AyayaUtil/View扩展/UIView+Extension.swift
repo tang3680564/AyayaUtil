@@ -21,6 +21,8 @@ fileprivate var shadowLayerObseverIndex = 1
 
 fileprivate var circleCornerRadiusIndex = 1
 
+fileprivate var shadowLayerCornerRadiusObseverIndex = 1
+
 extension UIView {
     
     ///角度
@@ -47,35 +49,6 @@ extension UIView {
         set {layer.masksToBounds = newValue}
     }
     
-    ///设置阴影的监听
-    private var shadowLayerObsever: NSKeyValueObservation? {
-        get {
-            if let obsever = objc_getAssociatedObject(self, &shadowLayerObseverIndex) as? NSKeyValueObservation{
-                return obsever
-            }
-            return nil
-        }
-        set {
-            objc_setAssociatedObject(self, &shadowLayerObseverIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-    
-    ///设置阴影
-    @IBInspectable var shadowLayer: Bool {
-        get {
-            if let shadow = objc_getAssociatedObject(self, &shadowIndex) as? Bool {
-                return shadow
-            }
-            return false
-        }
-        set{
-            setLayerShadow()
-            shadowLayerObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
-                self?.setLayerShadow()
-            })
-            objc_setAssociatedObject(self, &shadowIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-        }
-    }
     ///设置圆形的监听
     private var circleCornerRadiusObsever: NSKeyValueObservation? {
         get {
@@ -105,6 +78,52 @@ extension UIView {
             })
             layer.cornerRadius = frame.height / 2
             objc_setAssociatedObject(self, &circleIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+        }
+    }
+    
+    ///设置阴影的监听
+    private var shadowLayerObsever: NSKeyValueObservation? {
+        get {
+            if let obsever = objc_getAssociatedObject(self, &shadowLayerObseverIndex) as? NSKeyValueObservation{
+                return obsever
+            }
+            return nil
+        }
+        set {
+            objc_setAssociatedObject(self, &shadowLayerObseverIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    ///设置阴影的弧度监听
+    private var shadowLayerCornerRadiusObsever: NSKeyValueObservation? {
+        get {
+            if let obsever = objc_getAssociatedObject(self, &shadowLayerCornerRadiusObseverIndex) as? NSKeyValueObservation{
+                return obsever
+            }
+            return nil
+        }
+        set {
+            objc_setAssociatedObject(self, &shadowLayerCornerRadiusObseverIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    ///设置阴影
+    @IBInspectable var shadowLayer: Bool {
+        get {
+            if let shadow = objc_getAssociatedObject(self, &shadowIndex) as? Bool {
+                return shadow
+            }
+            return false
+        }
+        set{
+            setLayerShadow()
+            shadowLayerObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
+                self?.setLayerShadow()
+            })
+            shadowLayerCornerRadiusObsever = self.layer.observe(\CALayer.cornerRadius, options: .new) { [weak self] (view, changeHandler) in
+                self?.setLayerShadow()
+            }
+            objc_setAssociatedObject(self, &shadowIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
         }
     }
     

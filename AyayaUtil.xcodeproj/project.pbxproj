@@ -16,6 +16,8 @@
 		0F027CC024B56C510041A30B /* AyayaUtilTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027CBF24B56C510041A30B /* AyayaUtilTestUITests.swift */; };
 		0F027CCC24B56CC40041A30B /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
 		0F027CCD24B56CC40041A30B /* AyayaUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F907D6824D7F3F700BE89E7 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F907D6624D7F3F600BE89E7 /* TestTableViewCell.swift */; };
+		0F907D6924D7F3F700BE89E7 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F907D6724D7F3F700BE89E7 /* TestTableViewCell.xib */; };
 		0FF0217C2419DD12002A6799 /* AyayaUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF021722419DD11002A6799 /* AyayaUtil.framework */; };
 		0FF021812419DD12002A6799 /* AyayaUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021802419DD12002A6799 /* AyayaUtilTests.swift */; };
 		0FF021832419DD12002A6799 /* AyayaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF021752419DD11002A6799 /* AyayaUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -97,6 +99,8 @@
 		0F027CBB24B56C500041A30B /* AyayaUtilTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyayaUtilTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F027CBF24B56C510041A30B /* AyayaUtilTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyayaUtilTestUITests.swift; sourceTree = "<group>"; };
 		0F027CC124B56C510041A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F907D6624D7F3F600BE89E7 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		0F907D6724D7F3F700BE89E7 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		0FF021722419DD11002A6799 /* AyayaUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AyayaUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF021752419DD11002A6799 /* AyayaUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AyayaUtil.h; sourceTree = "<group>"; };
 		0FF021762419DD11002A6799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				0F027CA624B56C500041A30B /* Assets.xcassets */,
 				0F027CA824B56C500041A30B /* LaunchScreen.storyboard */,
 				0F027CAB24B56C500041A30B /* Info.plist */,
+				0F907D6624D7F3F600BE89E7 /* TestTableViewCell.swift */,
+				0F907D6724D7F3F700BE89E7 /* TestTableViewCell.xib */,
 			);
 			path = AyayaUtilTest;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F027CAA24B56C500041A30B /* LaunchScreen.storyboard in Resources */,
+				0F907D6924D7F3F700BE89E7 /* TestTableViewCell.xib in Resources */,
 				0F027CA724B56C500041A30B /* Assets.xcassets in Resources */,
 				0F027CA524B56C4B0041A30B /* Main.storyboard in Resources */,
 			);
@@ -570,6 +577,7 @@
 			files = (
 				0F027CA224B56C4B0041A30B /* ViewController.swift in Sources */,
 				0F027C9E24B56C4B0041A30B /* AppDelegate.swift in Sources */,
+				0F907D6824D7F3F700BE89E7 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

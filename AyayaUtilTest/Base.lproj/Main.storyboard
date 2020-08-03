@@ -15,29 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBI-eO-fKp">
-                                <rect key="frame" x="50" y="310" width="314" height="128"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-I2-KHO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="hnR-sW-hsv"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowLayer" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCornerRadius" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBI-eO-fKp" secondAttribute="trailing" constant="50" id="40a-zf-fAo"/>
-                            <constraint firstItem="uBI-eO-fKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Mwk-Zy-m1H"/>
-                            <constraint firstItem="uBI-eO-fKp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="sEI-iC-Rdt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QCD-I2-KHO" secondAttribute="bottom" id="1xE-MU-tgs"/>
+                            <constraint firstItem="QCD-I2-KHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jJA-lI-Z8I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QCD-I2-KHO" secondAttribute="trailing" id="lab-rK-FrC"/>
+                            <constraint firstItem="QCD-I2-KHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xlk-DN-cTN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vp5-75-uPd"/>
                     <connections>
-                        <outlet property="testView" destination="uBI-eO-fKp" id="VPo-ug-pvT"/>
+                        <outlet property="testTableView" destination="QCD-I2-KHO" id="6r4-I2-SQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

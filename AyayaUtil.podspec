@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = 'AyayaUtil'
-  s.version                   = '0.5'
+  s.version                   = '0.6'
   s.summary                   = 'AyayaUtil Framework'
   s.homepage                  = 'https://github.com/tang3680564/AyayaUtil'
   s.license                   = { :type => 'MIT', :file => 'LICENSE' }

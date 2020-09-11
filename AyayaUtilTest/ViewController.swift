@@ -41,6 +41,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identfit, for: indexPath) as? TestTableViewCell
+//        cell?.testLabel?.text = "4444".getLabel()
         return cell ?? UITableViewCell()
     }
 }

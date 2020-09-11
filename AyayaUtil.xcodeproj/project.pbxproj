@@ -38,6 +38,8 @@
 		0FF021CB241A1B17002A6799 /* ZHFCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021C8241A1B17002A6799 /* ZHFCalendarView.swift */; };
 		0FF021CC241A1B17002A6799 /* ZHFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021CA241A1B17002A6799 /* ZHFColor.swift */; };
 		0FF021CD241A1B17002A6799 /* UpDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF021C9241A1B17002A6799 /* UpDownView.swift */; };
+		0FFC424B250B114700A9D1C8 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC424A250B114700A9D1C8 /* UILabel+Extension.swift */; };
+		0FFC424D250B1DD200A9D1C8 /* language.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC424C250B1DD200A9D1C8 /* language.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		0FF021C8241A1B17002A6799 /* ZHFCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHFCalendarView.swift; sourceTree = "<group>"; };
 		0FF021C9241A1B17002A6799 /* UpDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownView.swift; sourceTree = "<group>"; };
 		0FF021CA241A1B17002A6799 /* ZHFColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHFColor.swift; sourceTree = "<group>"; };
+		0FFC424A250B114700A9D1C8 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		0FFC424C250B1DD200A9D1C8 /* language.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = language.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 				0F027CAB24B56C500041A30B /* Info.plist */,
 				0F907D6624D7F3F600BE89E7 /* TestTableViewCell.swift */,
 				0F907D6724D7F3F700BE89E7 /* TestTableViewCell.xib */,
+				0FFC424C250B1DD200A9D1C8 /* language.strings */,
 			);
 			path = AyayaUtilTest;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				0FF021A22419EAE2002A6799 /* MyTextFile.swift */,
+				0FFC424A250B114700A9D1C8 /* UILabel+Extension.swift */,
 			);
 			path = "输入框";
 			sourceTree = "<group>";
@@ -533,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFC424D250B1DD200A9D1C8 /* language.strings in Resources */,
 				0F027CAA24B56C500041A30B /* LaunchScreen.storyboard in Resources */,
 				0F907D6924D7F3F700BE89E7 /* TestTableViewCell.xib in Resources */,
 				0F027CA724B56C500041A30B /* Assets.xcassets in Resources */,
@@ -609,6 +616,7 @@
 				0FF021BE241A15BD002A6799 /* MyLabel.swift in Sources */,
 				0FF021C7241A187C002A6799 /* KeychainManager.swift in Sources */,
 				0FF0219A2419E8ED002A6799 /* AlertUtil.swift in Sources */,
+				0FFC424B250B114700A9D1C8 /* UILabel+Extension.swift in Sources */,
 				0FF021972419E84B002A6799 /* SlideViewController.swift in Sources */,
 				0FF021AC241A0857002A6799 /* NSObject+Extesion.swift in Sources */,
 				0FF021CD241A1B17002A6799 /* UpDownView.swift in Sources */,

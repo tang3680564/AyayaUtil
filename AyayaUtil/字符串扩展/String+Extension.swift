@@ -15,9 +15,11 @@ extension String{
     
     public func getLabel() -> String {
         if NSLocalizedString(self, comment: "") == self{
-            let paths = Bundle.main.path(forResource: "en", ofType: "lproj")
-            let strs =  NSLocalizedString(self, tableName: nil, bundle: Bundle.init(path: paths!)!, value: "", comment: "")
-            return  strs
+            if let paths = Bundle.main.path(forResource: "en", ofType: "lproj") {
+                let strs =  NSLocalizedString(self, tableName: nil, bundle: Bundle.init(path: paths)!, value: "", comment: "")
+                return  strs
+            }
+            
         }
         return NSLocalizedString(self, comment: "");
     }

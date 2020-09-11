@@ -19,7 +19,25 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aju-MZ-nEm">
                         <rect key="frame" x="15" y="15" width="345" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJM-Nm-amg">
+                                <rect key="frame" x="30" y="24.5" width="55.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="languageSet" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowLayer" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCornerRadius" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fJM-Nm-amg" firstAttribute="centerY" secondItem="Aju-MZ-nEm" secondAttribute="centerY" id="aFD-Xg-VIk"/>
+                            <constraint firstItem="fJM-Nm-amg" firstAttribute="leading" secondItem="Aju-MZ-nEm" secondAttribute="leading" constant="30" id="oeg-rx-h6i"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadowLayer" value="YES"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="circleCornerRadius" value="YES"/>
@@ -34,6 +52,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="testLabel" destination="fJM-Nm-amg" id="0dV-sb-H6F"/>
+            </connections>
             <point key="canvasLocation" x="44" y="30"/>
         </tableViewCell>
     </objects>

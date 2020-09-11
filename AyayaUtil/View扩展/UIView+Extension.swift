@@ -71,12 +71,14 @@ extension UIView {
             return false
         }
         set {
-            circleCornerRadiusObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
-                if let frame = change.newValue {
-                    self?.layer.cornerRadius = frame.height / 2
-                }
-            })
-            layer.cornerRadius = frame.height / 2
+            if newValue {
+                circleCornerRadiusObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
+                    if let frame = change.newValue {
+                        self?.layer.cornerRadius = frame.height / 2
+                    }
+                })
+                layer.cornerRadius = frame.height / 2
+            }
             objc_setAssociatedObject(self, &circleIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
         }
     }
@@ -116,14 +118,15 @@ extension UIView {
             return false
         }
         set{
-            setLayerShadow()
-            shadowLayerObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
-                self?.setLayerShadow()
-            })
-            shadowLayerCornerRadiusObsever = self.layer.observe(\CALayer.cornerRadius, options: .new) { [weak self] (view, changeHandler) in
-                self?.setLayerShadow()
-            }
             objc_setAssociatedObject(self, &shadowIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+            if (newValue) {
+                shadowLayerObsever = self.observe(\UIView.bounds, options: .new, changeHandler: { [weak self] (view, change) in
+                    self?.setLayerShadow()
+                })
+                shadowLayerCornerRadiusObsever = self.layer.observe(\CALayer.cornerRadius, options: .new) { [weak self] (view, changeHandler) in
+                    self?.setLayerShadow()
+                }
+            }
         }
     }
     

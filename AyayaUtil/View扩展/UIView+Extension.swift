@@ -188,6 +188,8 @@ extension UIView {
     
     ///设置阴影
     open func setLayerShadow() {
+        self.layer.masksToBounds = false
+        self.clipsToBounds = false
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowColor = UIColor(white: 0, alpha: 0.7).cgColor
         self.layer.shadowRadius = 2.5

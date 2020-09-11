@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0xq-QE-E3G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,15 +17,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-I2-KHO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="288" width="414" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIX-o6-Ow5">
+                                <rect key="frame" x="30" y="118" width="354" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE2-i9-3yf">
+                                        <rect key="frame" x="156" y="60" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="languageSet" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="UE2-i9-3yf" firstAttribute="centerY" secondItem="gIX-o6-Ow5" secondAttribute="centerY" id="EA2-jx-kcG"/>
+                                    <constraint firstItem="UE2-i9-3yf" firstAttribute="centerX" secondItem="gIX-o6-Ow5" secondAttribute="centerX" id="SjV-NK-mUU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowLayer" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCornerRadius" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QCD-I2-KHO" secondAttribute="bottom" id="1xE-MU-tgs"/>
-                            <constraint firstItem="QCD-I2-KHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jJA-lI-Z8I"/>
+                            <constraint firstItem="gIX-o6-Ow5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CGf-dk-lGz"/>
+                            <constraint firstItem="QCD-I2-KHO" firstAttribute="top" secondItem="gIX-o6-Ow5" secondAttribute="bottom" constant="30" id="QTq-13-Dkw"/>
+                            <constraint firstItem="gIX-o6-Ow5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cNH-JL-Cff"/>
+                            <constraint firstItem="QCD-I2-KHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="jJA-lI-Z8I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QCD-I2-KHO" secondAttribute="trailing" id="lab-rK-FrC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gIX-o6-Ow5" secondAttribute="trailing" constant="30" id="osN-r3-eLo"/>
                             <constraint firstItem="QCD-I2-KHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xlk-DN-cTN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

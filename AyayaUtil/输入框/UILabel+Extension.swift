@@ -14,12 +14,13 @@ private var languageObsertIndex = 2
 private var setLanguageFlagIndex = 3
 
 extension UILabel {
+    
     ///多语言设置开关
     @IBInspectable var languageSet: Bool {
         set {
             objc_setAssociatedObject(self, &languageSetIndex, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
             if (newValue) {
-                languageObsert = self.observe(\.text, options: .prior, changeHandler: { [weak self] (label, change) in
+                languageObsert = self.observe(\.text, options: .initial, changeHandler: { [weak self] (label, change) in
                     self?.setLanguage()
                 })
             }

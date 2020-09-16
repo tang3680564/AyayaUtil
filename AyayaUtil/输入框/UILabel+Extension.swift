@@ -15,6 +15,7 @@ public extension UILabel {
 
     override func awakeFromNib() {
         languageSet = true
+        super.awakeFromNib()
     }
     
     ///多语言设置开关

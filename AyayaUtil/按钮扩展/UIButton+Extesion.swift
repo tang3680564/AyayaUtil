@@ -14,7 +14,7 @@ var drawRoundAnimationFlagIndex = 1;
 var pathAnimationIndex = 1;
 var finishRoundIndex = 1;
 
-extension UIButton : CAAnimationDelegate{
+extension UIButton: CAAnimationDelegate{
     
     typealias finisDrawRound = ((Bool) -> ())
     ///完成后闭包

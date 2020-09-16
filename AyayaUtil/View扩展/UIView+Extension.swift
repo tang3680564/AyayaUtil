@@ -23,7 +23,7 @@ fileprivate var circleCornerRadiusIndex = 1
 
 fileprivate var shadowLayerCornerRadiusObseverIndex = 1
 
-extension UIView {
+public extension UIView {
     
     ///角度
     @IBInspectable var cornerRadius: CGFloat {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KeychainManager: NSObject {
+public class KeychainManager: NSObject {
     // TODO: 创建查询条件
     class func createQuaryMutableDictionary(identifier:String)->NSMutableDictionary{
         // 创建一个条件字典

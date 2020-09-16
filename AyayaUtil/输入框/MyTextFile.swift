@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MyTextFile : UITextField{
+public class MyTextFile : UITextField{
     
     private var leftWidth : CGFloat = 15
     
@@ -19,14 +19,14 @@ class MyTextFile : UITextField{
         set { leftWidth = newValue }
     }
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
         leftView = UIView(frame: CGRect(x: 0, y: 0, width: leftWidth, height: 0))
         leftViewMode = UITextField.ViewMode.always
 
     }
     
-    override func drawPlaceholder(in rect: CGRect) {
+    public override func drawPlaceholder(in rect: CGRect) {
         let rectS = rect
         
         super.drawPlaceholder(in: rectS)

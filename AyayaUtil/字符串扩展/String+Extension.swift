@@ -11,17 +11,31 @@ import CommonCrypto
 import CoreGraphics
 import UIKit
 
-extension String{
+public struct Language {
+    public static var languageTableName = ""
+}
+
+extension String {
     
     public func getLabel() -> String {
-        if NSLocalizedString(self, comment: "") == self{
-            if let paths = Bundle.main.path(forResource: "en", ofType: "lproj") {
-                let strs =  NSLocalizedString(self, tableName: nil, bundle: Bundle.init(path: paths)!, value: "", comment: "")
-                return  strs
-            }
-            
+        guard let path = Bundle.main.path(forResource: "", ofType: "strings") else {
+            return self
         }
-        return NSLocalizedString(self, comment: "");
+        let tableNameArr = path.components(separatedBy: "/");
+        guard tableNameArr.count > 0 else {
+            return self
+        }
+        let tableNameStrArr = tableNameArr[tableNameArr.count - 1].components(separatedBy: ".");
+        guard tableNameStrArr.count > 0 else {
+            return self
+        }
+        if Language.languageTableName.isEmpty {
+            let nowStr = NSLocalizedString(self, tableName: tableNameStrArr[0], bundle: Bundle.main, value: "", comment: "")
+            return nowStr;
+        }
+        let nowStr = NSLocalizedString(self, tableName: Language.languageTableName, bundle: Bundle.main, value: "", comment: "")
+        return nowStr;
+        
     }
     
     
@@ -144,3 +158,4 @@ extension String{
     }
 
 }
+
